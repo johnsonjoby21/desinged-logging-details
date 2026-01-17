@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Membership</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+
+    <div class="container">
+        <!-- Form Area -->
+        <div class="form-section">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('signup')">Sign Up</button>
+                <button class="tab-btn" onclick="switchTab('contact')">Contact Us</button>
+            </div>
+
+            <!-- Sign Up Form -->
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <h2>Create Account</h2>
+                <p> i am JOHNSON JOBY the developer of this form</p>
+                
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder=" " required>
+                    <label for="username">Username</label>
+                    <span class="error-msg" id="usernameError"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email Address</label>
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder=" " required>
+                    <label for="password">Password</label>
+                    <span class="error-msg" id="passwordError"></span>
+                </div>
+
+                <button type="submit">Sign Up Now</button>
+            </form>
+
+            <!-- Contact Form -->
+            <form id="contactForm" class="hidden" onsubmit="handleContact(event)">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you.</p>
+
+                <div class="input-group">
+                    <input type="text" id="contactName" name="name" placeholder=" " required>
+                    <label for="contactName">Full Name</label>
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="contactEmail" name="email" placeholder=" " required>
+                    <label for="contactEmail">Email Address</label>
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" placeholder=" " required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="error-msg"></span>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+       
+
+    <!-- Notification Toast -->
+    <div id="notification">Success!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "netlify-neon-form",
+  "version": "1.0.0",
+  "description": "Serverless backend for web form using Netlify and Neon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pg": "^8.11.3",
+    "bcryptjs": "^2.4.3"
+  }
+}
